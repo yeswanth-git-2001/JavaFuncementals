@@ -74,20 +74,6 @@ class Main {
         System.out.println(methodOverLoading.add(a, b));
         System.out.println(methodOverLoading.add(a, b, c));
 
-        Arrays arrays = new Arrays();
-        // arrays.oneDimenArray();
-        // arrays.showOneDimenArray();
-        // arrays.twoDimenRegularArray();
-        // arrays.displayTwoDimenRegularArray();
-        // arrays.twoDimenIregularArray();
-        // arrays.displayTwoDimenIregularArray();
-        // arrays.threeDimenRegularArrya();
-        // arrays.displayThreeDimenRegukarArray();
-        // arrays.threeDimenIregularArrya();
-        // arrays.displayThreeDimenIregukarArray();
-        //arrays.arrayOfObjects();
-        arrays.enhancedForLoop();
-
 
     }
 
