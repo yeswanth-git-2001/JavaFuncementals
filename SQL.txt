@@ -1,0 +1,76 @@
+How to create a dataBase : create database DATABASE_NAME
+--------------------------------------------------------
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| imdb               |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+
+
+mysql> create database testdb;
+------------------------------
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| imdb               |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| testdb             |
++--------------------+
+
+
+How to delete the database :
+----------------------------
+mysql> drop database testdb;
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| imdb               |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+
+
+You should use the database before you are manipulatiing the data in the database
+---------------------------------------------------------------------------------
+mysql> use testdb;
+Database changed
+
+
+How to create tables in database : 
+----------------------------------
+mysql> create table student(id int, firstname varchar(25), middlename varchar(25), lastname varchar(25));
+
+
+How to see the tables present in the database :
+-----------------------------------------------
+mysql> show tables;
++------------------+
+| Tables_in_testdb |
++------------------+
+| student          |
++------------------+
+
+
+How to see the description of the tables : 
+mysql> describe student;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| id         | int         | YES  |     | NULL    |       |
+| firstname  | varchar(25) | YES  |     | NULL    |       |
+| middlename | varchar(25) | YES  |     | NULL    |       |
+| lastname   | varchar(25) | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
